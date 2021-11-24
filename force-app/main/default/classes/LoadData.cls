@@ -81,13 +81,24 @@ public with sharing class LoadData {
             records.add(record);
         }
 
-        Database.insert(records,false);
+        try {
+            System.debug('records:\n'+records);
+            Database.insert(records);
+        } catch (Exception e) {
+            System.debug(e);
+        }
 
     }
 
-    static void deleteDemoDate() {
+    public static void deleteDemoData() {
         Database.delete([SELECT Id FROM Pokemon__c]);
         Database.delete([SELECT Id FROM Type__c]);
         Database.delete([SELECT Id FROM Weakness__c]);
+    }
+
+    public static void createDemoData() {
+        new LoadData(Pokemon__c.SObjectType,'PokemonData');
+        new LoadData(Type__c.SObjectType,'PokemonTypeData');
+        new LoadData(Weakness__c.SObjectType,'PokemonWeaknessData');
     }
 }

@@ -3,7 +3,7 @@
     <fullName>Height__c</fullName>
     <externalId>false</externalId>
     <label>Height</label>
-    <length>6</length>
+    <length>10</length>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>

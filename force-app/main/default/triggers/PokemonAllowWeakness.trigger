@@ -12,7 +12,7 @@ trigger PokemonAllowWeakness on Weakness__c (before insert) {
             Set<String> pokeType = Pokemon_Type__mdt.getAll().keySet();
 
             for (Weakness__c type : Trigger.new) {
-                System.assert(pokeType.contains(type.Name),'Pokemon type does not exist');
+                System.assert(pokeType.contains(type.Name),'Pokemon type does not exist: '+type.Name);
             }
         }
     }

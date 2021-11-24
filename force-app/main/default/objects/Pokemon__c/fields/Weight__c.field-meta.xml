@@ -3,7 +3,7 @@
     <fullName>Weight__c</fullName>
     <externalId>false</externalId>
     <label>Weight</label>
-    <length>7</length>
+    <length>10</length>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>
