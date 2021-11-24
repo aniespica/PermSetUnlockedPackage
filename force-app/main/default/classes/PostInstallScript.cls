@@ -6,7 +6,7 @@
  * @last modified by  : Ana Cabrera
 **/
 global with sharing class PostInstallScript implements InstallHandler {
-    
+    global PostInstallScript() {}
     global void onInstall(InstallContext context) {
         createDemoData();
     }
