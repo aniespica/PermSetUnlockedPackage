@@ -1,11 +1,18 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "package": "VeevartPKDemo",
+            "default": true,
+            "versionName": "Winter 21' 0.1.0",
+            "versionNumber": "0.1.0.NEXT",
+            "postInstallScript": "PostInstallScript"
+        }
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "53.0",
+    "packageAliases": {
+        "VeevartPKDemo": "0Ho5f000000PBBhCAO"
     }
-  ],
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "53.0"
 }
