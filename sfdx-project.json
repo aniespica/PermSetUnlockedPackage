@@ -12,6 +12,7 @@
     "sourceApiVersion": "53.0",
     "packageAliases": {
         "VeevartPKDemo": "0Ho5f000000PBBhCAO",
-        "VeevartPKDemo@0.1.0-1": "04t5f000000IyHBAA0"
+        "VeevartPKDemo@0.1.0-1": "04t5f000000IyHBAA0",
+        "VeevartPKDemo@0.1.0-2": "04t5f000000IyHGAA0"
     }
 }
